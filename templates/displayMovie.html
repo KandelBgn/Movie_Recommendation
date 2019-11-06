@@ -1,0 +1,248 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Movie Recommendation</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- font icons css -->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/semantic.min.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/scrollbar.css' %}"/>
+
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css' %}"/>
+
+	<link rel="stylesheet" href="{% static 'css/lnr-font.css' %}">
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+	<div class="body-inactive fixed cover"></div>
+	<div class="offcanvas">
+		<div class="coff absolute">
+			<a href="">
+				<img src="{% static 'images/csb.png' %}" width="22">
+			</a>
+		</div>
+		<div class="nano">
+			<div class="nano-content">
+				<!-- Dynamic Cloing of Navigation For Mobile -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Header Markup -->
+	<header class="header clearfix" id="myHeader">
+		<div class="container">
+			<div class="mytable">
+				<div class="logo table-cell va-middle">
+					<a href="">
+						<img src="{% static 'images/logo1.jpg' %}" />Movie Recommendation System
+					</a>
+				</div>
+				<div class="my-menu table-cell va-middle">
+					<ul class="floated-list clearfix">
+						<li class="active"><a href="">Home</a></li>
+						<li class="">
+							<a href="#">Categories</a>
+							<ul class="submenu">
+								<li><a href="#" title="">Technology</a></li>
+								<li><a href="#" title="">Education</a></li>
+								<li><a href="#" title="">Politices</a></li>
+								<li><a href="#" title="">Entertainment</a></li>
+							</ul>
+						</li>
+						<li><a href="">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="toggle">
+				<a href="">
+					<img src="{% static 'images/toggle.png' %}">
+				</a>
+			</div>
+			<hr>
+		</div>
+
+	</header>
+
+
+
+	<!-- Main body Markup -->
+	<main>
+		<div class="single-event-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<article class="single-post">
+							<div class="post-img"> 
+								<img src="{% static 'images/event4.jpg' %}" alt="">
+							</div>
+							<div class="post-header "> 
+								<h1 class="entry-title">Denver’s Blossoming Indie Music Scene</h1> <span class="sp-date">January 9, 2018</span>
+
+							</div>
+							<div class="post-entry ">
+								<p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies master cleanse Kickstarter seitan retro. Drinking vinegar stumptown yr pop-up artisan sunt.&nbsp;<em>Deep v cliche lomo</em>&nbsp;biodiesel Neutra selfies. Shorts fixie consequat flexitarian four loko</p>
+								<p>Exercitation photo booth<strong>&nbsp;stumptown tote bag</strong>&nbsp;Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&nbsp;Selfies iPhone Kickstarter, drinking vinegar jean&nbsp;vinegar stumptown yr pop-up artisan sunt.&nbsp;Banksy, elit small tempor duis single-origin coffee ea next level ethnic.</p>
+								<h3>Lorem Ipsum Dolor&nbsp;Synth</h3>
+								<p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil,&nbsp;<strong><a href="#">flexitarian Truffaut</a></strong>&nbsp;synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies master cleanse Kickstarter seitan retro. Drinking vinegar stumptown yr pop-up artisan sunt. Deep v cliche lomo biodiesel Neutra selfies.&nbsp;Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave.</p>
+								<blockquote>
+									<p>Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus&nbsp;freegan sed drinking vinegar jean bespoke vinyl art party photo booth et 8-bit kale.</p>
+								</blockquote>
+								<p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&nbsp;Selfies iPhone Kickstarter, drinking vinegar jean shorts fixie consequat flexitarian four loko.&nbsp;Selfies iPhone Kickstarter, drinking vinegar jean&nbsp;vinegar stumptown.</p>
+								<ul>
+									<li>Vinegar <em>jean shorts</em> fixie</li>
+									<li>Booth stumptown tote bag</li>
+									<li><strong>Fanny pack</strong> selfies iPhone Kickstarter</li>
+									<li>Chips proident <a href="#">chillwave</a></li>
+								</ul>
+								<p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&nbsp;Selfies iPhone Kickstarter, drinking vinegar jean.&nbsp;Synth art party deep v chillwave. Seitan High Life reprehenderit consectetur.</p>
+							</div>
+
+						</article>
+
+						<div class="post-pagination pagi-border">
+							<div class="row">
+								<div class="col-sm-6 prev">
+									<div class="pagination-item prev">
+										<div class="pagination-img">
+											<a href="#"><img src="{% static 'images/4post-520x400.jpg' %}" alt=""></a>
+										</div>
+										<div class="pagination-content"> <span class="pagination-text">Previous Post</span>
+											<h3><a href="#">Green Sanctuaries of New York</a></h3>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="pagination-item next">
+										<div class="pagination-img">
+											<a href="#"><img src="{% static 'images/3post-520x400.jpg' %}" alt=""></a>
+										</div>
+										<div class="pagination-content"> <span class="pagination-text">Next Post</span>
+											<h3><a href="#">2018 Commuter Fashions of London</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- cols 9 end here -->
+					<div class="col-md-4">
+						<div class="widget-wrap ">
+							<h3 class="widget-title">Recent <strong>Blog</strong></h3>
+							<ul class="blog-list">
+								<li>
+									<div class="post-img">
+										<a href="#" title=""><img src="images/event3.jpg" alt=""></a>
+									</div>
+									<div class="post-content">
+										<h3><a href="#" title="">When Modern Decor & Fashion Collide</a></h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									</div>
+								</li>
+								<!-- /li -->
+								<li>
+									<div class="post-img">
+										<a href="#" title=""><img src="images/event4.jpg" alt=""></a>
+									</div>
+									<div class="post-content">
+										<h3><a href="#" title="">When Modern Decor & Fashion Collide</a></h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									</div>
+								</li>
+								<!-- /li -->
+								<li>
+									<div class="post-img">
+										<a href="#" title=""><img src="images/event5.jpg" alt=""></a>
+									</div>
+									<div class="post-content">
+										<h3><a href="#" title="">When Modern Decor & Fashion Collide</a></h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									</div>
+								</li>
+								<!-- /li -->
+								<li>
+									<div class="post-img">
+										<a href="#" title=""><img src="images/event6.jpg" alt=""></a>
+									</div>
+									<div class="post-content">
+										<h3><a href="#" title="">When Modern Decor & Fashion Collide</a></h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									</div>
+								</li>
+								<!-- /li -->
+								<li>
+									<div class="post-img">
+										<a href="#" title=""><img src="images/event7.jpg" alt=""></a>
+									</div>
+									<div class="post-content">
+										<h3><a href="#" title="">When Modern Decor & Fashion Collide</a></h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									</div>
+								</li>
+								<!-- /li -->
+							</ul>
+							<p class="events-widget-link">
+								<a href="#" title="">View All Blog</a>
+							</p>
+						</div>
+						<!-- /blog -->
+
+						<div class="widget-wrap ">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer Markup -->
+	<footer class="lfooter">
+		<div class="container">
+			<div class="copyright">
+				<span>Copyright &copy; 2019 Movie Recommendation.</span>
+			</div>
+		</div>
+	</footer>
+
+	<!-- js library -->
+	<script type="text/javascript" src="{% static 'js/library.min.js' %}"></script>
+
+	<script type="text/javascript" src="{% static 'js/slick.min.js' %}"></script>
+
+	<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+
+	<script type="text/javascript" src="{% static 'js/wow.js' %}"></script>
+
+	<!-- bootstrap js -->
+	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+	<!-- scrollbar js -->
+	<script type="text/javascript" src="{% static 'js/scrollbar.js' %}"></script>
+
+	<!-- Custom Js -->
+	<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+	<script>
+		new WOW().init();
+	</script>
+
+</body>
+</html>

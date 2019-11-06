@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Movie Recommendation</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- font icons css -->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/semantic.min.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/scrollbar.css' %}"/>
+
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css' %}"/>
+
+	<link rel="stylesheet" href="{% static 'css/lnr-font.css' %}">
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+	<div class="body-inactive fixed cover"></div>
+	<div class="offcanvas">
+		<div class="coff absolute">
+			<a href="">
+				<img src="{% static 'images/csb.png' %}" width="22">
+			</a>
+		</div>
+		<div class="nano">
+			<div class="nano-content">
+				<!-- Dynamic Cloing of Navigation For Mobile -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Header Markup -->
+	<header class="header clearfix" id="myHeader">
+		<div class="container">
+			<div class="mytable">
+				<div class="logo table-cell va-middle">
+					<a href="">
+						<img src="{% static 'images/logo1.jpg' %}" />Movie Recommendation System
+					</a>
+				</div>
+				<div class="my-menu table-cell va-middle">
+					<ul class="floated-list clearfix">
+						<li class="active"><a href="">Home</a></li>
+						<li class="">
+							<a href="#">Categories</a>
+							<ul class="submenu">
+								<li><a href="#" title="">Technology</a></li>
+								<li><a href="#" title="">Education</a></li>
+								<li><a href="#" title="">Politices</a></li>
+								<li><a href="#" title="">Entertainment</a></li>
+							</ul>
+						</li>
+						<li><a href="">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="toggle">
+				<a href="">
+					<img src="{% static 'images/toggle.png' %}">
+				</a>
+			</div>
+			<hr>
+		</div>
+
+	</header>
+
+
+	<!-- Main body Markup -->
+	<main>
+
+		<div class="">
+			<div class="container">
+                <div class="event-list">
+					<h3>Trending/Popular/Recently Released</h3>
+
+                </div>
+
+                <div class="event-list">
+						<div class="event-item">
+							<div class="event-box">
+								<div class="event-media">
+									<a href="#" title="ceremony"><img src="{% static 'images/event1.jpg' %}" alt="ceremony"></a>
+									<a class="event-title">Movie name </a></h4>
+
+								</div>
+							</div>
+						</div>
+						<!-- event loop -->
+						<div class="event-item">
+							<div class="event-box">
+								<div class="event-media">
+									<a href="#" title="ceremony"><img src="{% static 'images/event2.jpg' %}" alt="ceremony"></a>
+									<h4 class="event-title"><a href="#" title="Learning Technologies">New year Celebration</a></h4>
+								</div>
+							</div>
+						</div>
+
+						<!-- event loop -->
+						<div class="event-item">
+							<div class="event-box">
+								<div class="event-media">
+									<a href="#" title="ceremony"><img src="{% static 'images/event3.jpg' %}" alt="ceremony"></a>
+									<h4 class="event-title"><a href="#" title="Learning Technologies">Learning Technologies</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- Footer Markup -->
+	<footer class="lfooter">
+		<div class="container">
+			<div class="copyright">
+				<span>Copyright &copy; 2019 Movie Recommendation.</span>
+			</div>
+		</div>
+	</footer>
+
+	<!-- js library -->
+	<script type="text/javascript" src="{% static 'js/library.min.js' %}"></script>
+
+	<script type="text/javascript" src="{% static 'js/slick.min.js' %}"></script>
+
+	<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+
+	<script type="text/javascript" src="{% static 'js/wow.js' %}"></script>
+
+	<!-- bootstrap js -->
+	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+	<!-- scrollbar js -->
+	<script type="text/javascript" src="{% static 'js/scrollbar.js' %}"></script>
+
+	<!-- Custom Js -->
+	<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+	<script>
+		new WOW().init();
+	</script>
+	<!--header-->
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
+
+	function myFunction() {
+ 	 if (window.pageYOffset > sticky) {
+  	  header.classList.add("sticky");
+  	} else {
+    	header.classList.remove("sticky");
+  	}
+	}
+	</script>
+</body>
+</html>
