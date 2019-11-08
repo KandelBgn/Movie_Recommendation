@@ -32,7 +32,7 @@
 </head>
 <body>
 
-	<div class="body-inactive fixed cover"></div>
+
 	<div class="offcanvas">
 		<div class="coff absolute">
 			<a href="">
@@ -58,16 +58,19 @@
 				<div class="my-menu table-cell va-middle">
 					<ul class="floated-list clearfix">
 						<li class="active"><a href="">Home</a></li>
+						{% if user.is_authenticated %}
 						<li class="">
-							<a href="#">Categories</a>
+							<a href="#">Hello, {{user.username}}</a>
 							<ul class="submenu">
-								<li><a href="#" title="">Technology</a></li>
-								<li><a href="#" title="">Education</a></li>
-								<li><a href="#" title="">Politices</a></li>
-								<li><a href="#" title="">Entertainment</a></li>
+								<li><a href="#" title="">Profile</a></li>
+								<li><a href="#" title="">Add movie</a></li>
+								<li><a href="accounts/logout" title="">Logout</a></li>
 							</ul>
 						</li>
-						<li><a href="">Contact Us</a></li>
+						{% else %}
+						<li><a href="accounts/register">Register</a></li>
+						<li><a href="accounts/login">Login</a></li>
+						{% endif %}
 					</ul>
 				</div>
 			</div>
@@ -158,19 +161,6 @@
 		new WOW().init();
 	</script>
 	<!--header-->
-	<script>
-	window.onscroll = function() {myFunction()};
 
-	var header = document.getElementById("myHeader");
-	var sticky = header.offsetTop;
-
-	function myFunction() {
- 	 if (window.pageYOffset > sticky) {
-  	  header.classList.add("sticky");
-  	} else {
-    	header.classList.remove("sticky");
-  	}
-	}
-	</script>
 </body>
 </html>
